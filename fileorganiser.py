@@ -1,8 +1,19 @@
 import os
 import shutil
+from tkinter import Tk, filedialog
 
-# 📂 Change this path
-source_folder = "C:/Users/Asus/Downloads"
+# 🪟 Hide root window
+Tk().withdraw()
+
+# 📂 Ask user to select folder
+source_folder = filedialog.askdirectory(title="Select Folder to Organize")
+
+# ❌ If no folder selected
+if not source_folder:
+    print("No folder selected. Exiting...")
+    exit()
+
+print(f"\nSelected Folder: {source_folder}\n")
 
 # 📁 File categories
 file_types = {
@@ -32,13 +43,14 @@ def organize_files():
 
         # ❌ Skip hidden/system files
         if filename.startswith("."):
-            print(f"Skipped: {filename} (hidden/system file)")
+            print(f"Skipped: {filename} (hidden file)")
             continue
 
         # Skip folders
         if os.path.isdir(file_path):
             continue
 
+        # Get extension
         _, extension = os.path.splitext(filename)
         extension = extension.lower()
 
@@ -62,6 +74,7 @@ def organize_files():
                 moved = True
                 break
 
+        # If no category matched
         if not moved:
             other_folder = os.path.join(source_folder, "Others")
             os.makedirs(other_folder, exist_ok=True)

@@ -32,8 +32,7 @@ A powerful Python automation tool that organizes files in any selected folder in
 ## 🖼️ GUI Preview
 
 ### Folder Selection Window
-![GUI Screenshot](https://via.placeholder.com/800x400.png?text=Folder+Selection+GUI)
-
+![GUI Screenshot](assets/gui.png)
 ---
 
 ## 📂 Example

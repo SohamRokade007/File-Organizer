@@ -1,40 +1,38 @@
+
 # 📁 File Organizer (Python Automation)
 
-A Python automation tool that organizes files in a folder (like Downloads) into categorized subfolders based on file type.
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
-## 🚀 Features
+## 🚀 Overview
 
-- 📂 Automatically sorts files into folders:
-  - Images
-  - Videos
-  - Documents
-  - Code
-  - Archives
-  - Applications
-  - Audio
-  - Torrents
-  - Config files
-  - Shortcuts
+A powerful Python automation tool that organizes files in any selected folder into categorized subfolders using a clean **GUI folder picker**.
 
-- ⚡ Skips:
-  - `.part` files (active downloads)
-  - Hidden/system files (starting with `.`)
-
-- 📊 Displays summary:
-  - Total files processed
-  - Files moved per category
-
-- 🧠 Smart categorization based on file extensions
+> ⚡ Turn messy folders into clean, structured directories in seconds.
 
 ---
 
-## 🛠️ Tech Used
+## ✨ Features
 
-- Python
-- os module
-- shutil module
+- 🖱️ **GUI Folder Selection**
+- 📂 Auto file sorting into:
+  - Images, Videos, Documents, Code, Archives, Applications, Audio, Torrents, Config, Shortcuts
+- ⚡ Smart handling:
+  - Skips `.part` files (active downloads)
+  - Skips hidden/system files
+- 📊 Summary report after execution
+- 🧠 Intelligent extension-based categorization
+
+---
+
+## 🖼️ GUI Preview
+
+### Folder Selection Window
+![GUI Screenshot](https://via.placeholder.com/800x400.png?text=Folder+Selection+GUI)
 
 ---
 
@@ -60,46 +58,54 @@ Downloads/
 
 ---
 
-## ▶️ How to Run
+## ▶️ Usage
 
-### 1. Run Python Script
+### Run Python Script
 ```
 python fileorganiser.py
 ```
 
-### 2. OR Run EXE
+### OR Run EXE
 ```
 fileorganiser.exe
 ```
 
----
-
-## ⚙️ Configuration
-
-Edit this line in the script:
-
-```python
-source_folder = "C:/Users/YourName/Downloads"
-```
-
-Replace `YourName` with your system username.
+👉 Select folder → Files organized automatically
 
 ---
 
-## 💡 Future Improvements
+## ⚙️ How It Works
 
-- GUI version (Tkinter)
-- Auto-run on system startup
-- File sorting by date
-- Duplicate file handling
-- Notification system
+1. User selects folder via GUI  
+2. Script scans files  
+3. Files moved into categorized folders  
+4. Summary displayed  
 
 ---
 
-## 🔥 Use Case
+## 🛠️ Tech Stack
 
-- Clean messy Downloads folder
-- Automate file management
+- Python
+- os
+- shutil
+- tkinter (GUI)
+
+---
+
+## 💡 Future Enhancements
+
+- 📊 Progress bar
+- ✅ Success popup
+- 🌙 Dark mode UI
+- 📅 Date-based sorting
+- 🔁 Duplicate handling
+
+---
+
+## 🎯 Use Cases
+
+- Clean Downloads folder
+- Organize project files
 - Improve productivity
 
 ---
@@ -107,6 +113,12 @@ Replace `YourName` with your system username.
 ## 📌 Author
 
 **Soham Rokade**
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
 
 ---
 

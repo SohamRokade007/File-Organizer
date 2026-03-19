@@ -120,6 +120,9 @@ fileorganiser.exe
 If you like this project, give it a ⭐ on GitHub!
 
 ---
+## 📄 License
+
+This project is licensed under the MIT License.
 
 ## 💡 Quote
 
